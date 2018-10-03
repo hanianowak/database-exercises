@@ -3,20 +3,21 @@ use codeup_test_db;
 -- Write SELECT statements to output each of the following with a caption:
 --
 -- All albums in your table.
-select name from albums;
+select name as 'all the albums' from albums;
 update albums set sales = sales*10;
-select name from albums;
+select name as 'all albums after increasing sales' from albums;
 --
 --
 -- All albums released before 1980
-select name from albums where release_date < 1980;
+select name as 'all the albums released before 1980' from albums where release_date < 1980;
 update albums set release_date = release_date-100 where release_date < 1980;
-select name from albums where release_date < 1900;
+select name as 'all the older albums' from albums where release_date < 1900;
 
 -- All albums by Michael Jackson
-select name from albums where artist = 'Michael Jackson';
+select name as 'all the albums of Michael Jackson' from albums where artist = 'Michael Jackson';
 update albums set artist = 'Peter Jackson' where artist = 'Michael Jackson';
-select artist, name from albums where artist = 'Peter Jackson';
+select artist, name as 'all the albums of Peter Jackson' from albums where artist = 'Peter Jackson';
+
 
 
 
