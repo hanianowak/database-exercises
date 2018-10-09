@@ -1,7 +1,7 @@
 USE codeup_test_db;
 
 
--- DROP TABLE IF EXISTS albums;
+DROP TABLE IF EXISTS albums;
 
 -- Create an albums table with the following columns:
 --
@@ -20,5 +20,6 @@ CREATE TABLE albums (
   release_date integer,
   sales float,
   genre varchar(100),
-  primary key (id)
+  primary key (id),
+  unique (name, artist)
 );
