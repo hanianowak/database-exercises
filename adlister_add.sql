@@ -25,9 +25,9 @@ values ('RKI COMMERCIAL GRADE UNDER BODY TRUCK TOOLBOX BH481818',
 
 insert into categories (name)
 values ('for sale'),
-('financial'),
-('housing'),
-('community');
+      ('financial'),
+      ('housing'),
+      ('community');
 
 insert  into user_ad (ad_id, category_id)
 values (1, 1),
